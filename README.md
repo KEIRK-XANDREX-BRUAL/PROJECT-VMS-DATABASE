@@ -23,8 +23,8 @@ The Immunization Tracker uses an SQL database to store and manage patient and va
 1. **Patients**
    - `patient_id` (Primary Key)
    - `name`
-   - `age`
-   - `type` (Child, Teen, Adult)
+   - `contact details`
+   - `age` 
    - `additional_info` (e.g., Parent's name for children, School name for teens, Occupation for adults)
 
 2. **Vaccines**
@@ -32,6 +32,7 @@ The Immunization Tracker uses an SQL database to store and manage patient and va
    - `vaccine_name`
    - `schedule_interval` (e.g., 6 months, 1 year)
    - `total_doses`
+   - `dose_volume`
 
 3. **VaccinationRecords**
    - `record_id` (Primary Key)
