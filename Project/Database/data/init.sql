@@ -34,3 +34,12 @@ CREATE TABLE IF NOT EXISTS VaccineRecords (
 
 -- Show Tables
 SHOW TABLES;
+
+-- View patients table
+SELECT * FROM patients;
+
+-- View vaccines table
+SELECT * FROM vaccines;
+
+-- View vaccinerecords table
+SELECT * FROM vaccinereords;
