@@ -40,35 +40,6 @@ The Immunization Tracker uses an SQL database to store and manage patient and va
    - `remaining_doses`
    - `status` (Completed, Not Completed)
 
-### SQL Queries:
-
-#### Insert a New Patient:
-```sql
-INSERT INTO Patients (name, age, type, additional_info) 
-VALUES ('John Doe', 12, 'Teen', 'Springfield High School');
-```
-
-#### Record a Vaccination:
-```sql
-INSERT INTO VaccinationRecords (patient_id, vaccine_id, next_vaccination_date, remaining_doses) 
-VALUES (1, 3, '2025-01-15', 2);
-```
-
-#### Update Remaining Doses:
-```sql
-UPDATE VaccinationRecords 
-SET remaining_doses = remaining_doses - 1 
-WHERE record_id = 1;
-```
-
-#### Retrieve Vaccination Status:
-```sql
-SELECT p.name, v.vaccine_name, vr.next_vaccination_date, vr.remaining_doses 
-FROM Patients p 
-JOIN VaccinationRecords vr ON p.patient_id = vr.patient_id 
-JOIN Vaccines v ON vr.vaccine_id = v.vaccine_id;
-```
-
 ---
 
 ## III. SDG Integration ⚕️ 🩺
